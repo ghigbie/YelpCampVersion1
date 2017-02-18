@@ -6,11 +6,11 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res){
-    res.render("home");
+    res.render("landing");
 });
 
 app.get("/search", function(req, res){
-    res.render("search");
+    res.render("campgrounds");
 });
 
 app.get("*", function(req, res){
