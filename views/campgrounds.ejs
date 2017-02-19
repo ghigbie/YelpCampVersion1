@@ -2,8 +2,14 @@
 
 <h1>Here are the Campgrounds</h1>
 
-<%= campgrounds %>
-
+<ul>
+<% campgrounds.forEach(function(){ %>
+    <figure>
+        <figcaption><%= campgrounds["name"]%></figcaption>
+        <img src=<%=campgrounds["image"]%> alt="image of a natural setting">
+    </figure>
+<% }); %>
+</ul>
 
 
 <% include partials/footer %>
