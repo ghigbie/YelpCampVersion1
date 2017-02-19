@@ -1,14 +1,14 @@
 <% include partials/header %>
 
 <h1>Here are the Campgrounds</h1>
-
+<a href="/campgrounds/new">Add New Campground</a>
 <ul>
 <% campgrounds.forEach(function(campground){ %>
     <figure>
         <figcaption>
             <strong>
                 <h4><%= campground["name"]%></h4>
-            </stron>
+            </strong>
         </figcaption>
         <img src="<%=campground["image"]%>" alt="image of a natural setting">
     </figure>
