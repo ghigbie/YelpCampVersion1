@@ -5,7 +5,11 @@
 <ul>
 <% campgrounds.forEach(function(campground){ %>
     <figure>
-        <strong><figcaption><%= campground["name"]%></figcaption></strong>
+        <figcaption>
+            <strong>
+                <h4><%= campground["name"]%></h4>
+            </stron>
+        </figcaption>
         <img src="<%=campground["image"]%>" alt="image of a natural setting">
     </figure>
 <% }); %>
