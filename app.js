@@ -23,8 +23,13 @@ app.get("/search", function(req, res){
     res.render("search");
 });
 
+
 app.get("*", function(req, res){
    res.render("notFound"); 
+});
+
+app.post("/campgrounds", function(req, res){ //this is the REST convention - should be the same url
+    res.send("You hit the post route");
 });
 
 app.listen(process.env.PORT, process.env.IP, function(){
