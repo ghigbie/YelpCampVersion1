@@ -1,7 +1,9 @@
 var express = require("express");
 var app = express();
+var bodyParser = require("body-parser");
 var request = require("request");
 
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
@@ -30,6 +32,10 @@ app.get("*", function(req, res){
 
 app.post("/campgrounds", function(req, res){ //this is the REST convention - should be the same url
     res.send("You hit the post route");
+});
+
+app.get("/campgrouonds/new", function(req, res){
+    res.render("new.ejs");
 });
 
 app.listen(process.env.PORT, process.env.IP, function(){
