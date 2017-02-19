@@ -16,7 +16,7 @@ app.get("/campgrounds", function(req, res){
         {name: "Mountain Goat's Rest", image: "http://rvdreams.smugmug.com/Howard-Lindas-Full-Timing-RV/Places-We-Have-Visited-2013/Helena-Montana-Area/i-k3gqnJ6/0/S/DSC_0612-S.jpg"}    
     ];
     
-    res.render("campgrounds");
+    res.render("campgrounds", {campgrounds: campgrounds});
 });
 
 app.get("/search", function(req, res){
