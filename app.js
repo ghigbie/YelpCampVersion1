@@ -25,15 +25,13 @@ app.get("/search", function(req, res){
     res.render("search");
 });
 
-
-
 app.post("/campgrounds", function(req, res){ //this is the REST convention - should be the same url
     res.send("You hit the post route");
     //get form data
     //add to campgrounds array
 });
 
-app.get("/campgrouonds/new", function(req, res){
+app.get("/campgrounds/new", function(req, res){
     res.render("new.ejs");
 });
 
