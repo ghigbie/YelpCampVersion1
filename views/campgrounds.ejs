@@ -3,10 +3,10 @@
 <h1>Here are the Campgrounds</h1>
 
 <ul>
-<% campgrounds.forEach(function(){ %>
+<% campgrounds.forEach(function(campground){ %>
     <figure>
-        <figcaption><%= campgrounds["name"]%></figcaption>
-        <img src=<%=campgrounds["image"]%> alt="image of a natural setting">
+        <figcaption><%= campground["name"]%></figcaption>
+        <img src=<%=campground["image"]%> alt="image of a natural setting">
     </figure>
 <% }); %>
 </ul>
