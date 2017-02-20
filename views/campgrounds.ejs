@@ -1,6 +1,10 @@
 <% include partials/header %>
 
-<h1>Here are the Campgrounds</h1>
+<div class="container">
+    <header class="jubotron">
+       <h1>Here are the Campgrounds</h1> 
+    </header>
+
 <a href="/campgrounds/new">Add New Campground</a>
 <ul>
 <% campgrounds.forEach(function(campground){ %>
@@ -15,5 +19,6 @@
 <% }); %>
 </ul>
 
-<a href="/campgrounds">Go Back</a>
+</div>
+
 <% include partials/footer %>
