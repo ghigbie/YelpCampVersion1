@@ -3,10 +3,10 @@ body{
     /*color: #68F0F7;*/
 }
 
-/*.row{*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*}*/
+#mainRow{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 #inputRow{
     width: 30%;
