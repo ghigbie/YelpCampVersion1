@@ -22,7 +22,7 @@ var campgrounds = [
 
     
 app.get("/", function(req, res){
-    res.render("landing");
+    res.redirect("/campgrounds");
 });
 
 app.get("/campgrounds", function(req, res){
